@@ -4,7 +4,7 @@ Scala bowling logic implementation
 Usage:
 
 1. Clone github repo:<br/>
-git clone https://github.com/mvlad7402/bowling.git
+__git clone https://github.com/mvlad7402/bowling.git__
 
 2. Run: __sbt run__<br/>
 You will get results: Bowling game score: 101
