@@ -18,8 +18,9 @@ class PlayBowlTest  extends org.scalatest.FunSuite {
     for (i <- 1 to count) game.roll(ball)
 
   test("scoreAll_0"){
-  def scoreAll_0 =
-    testSameRolls(0, 0)
+    def scoreAll_0 =
+      testSameRolls(0, 0)
+    scoreAll_0
   }
 
 
@@ -30,16 +31,19 @@ class PlayBowlTest  extends org.scalatest.FunSuite {
       val scr = game.score
       assert(scr == 120, "Score="+scr)
     }
+    scoreGame
   } 
     
   test("scoreAll_1"){
-  def scoreAll_1 =
-    testSameRolls(1, 20)
+    def scoreAll_1 =
+      testSameRolls(1, 20)
+    scoreAll_1
   }
 
   test("testIncomplete"){
-  def testIncomplete =
-    testSameRolls(1,   18, 18)
+    def testIncomplete =
+      testSameRolls(1,   18, 18)
+    testIncomplete
   }  
     
   test("scoreOneSpare"){
@@ -50,6 +54,7 @@ class PlayBowlTest  extends org.scalatest.FunSuite {
       val scr = game.score
       assert(scr == 29, "Score="+scr)    
     }
+    scoreOneSpare
   }
 
   test("scoreSpareInFrame3"){
@@ -61,6 +66,7 @@ class PlayBowlTest  extends org.scalatest.FunSuite {
       val scr = game.score
       assert(scr == 10 + 1 + 10, "Score="+scr)
     }
+    scoreSpareInFrame3
   }
 
 
@@ -73,6 +79,7 @@ class PlayBowlTest  extends org.scalatest.FunSuite {
       val scr = game.score
       assert(scr == 10 + 14 + 10 * 7 , "Score="+scr) 
     }
+    scoreStrikeInFrame3
   }
 
   test("scoreAllStrike"){
@@ -82,6 +89,7 @@ class PlayBowlTest  extends org.scalatest.FunSuite {
       val scr = game.score
       assert(scr == 300, "Score="+scr)
     }
+    scoreAllStrike
   }
 
 }  
